@@ -32,7 +32,16 @@
           } 
           .ansvgb{
              display:none
-          }
+          } 
+          #notforpc{
+             display:flex;
+          }  
+      }  
+
+        @media only screen and (min-width:679px) {
+          #notforpc{
+             display:none
+          }  
       } 
  
   </style>
@@ -40,7 +49,20 @@
 
 </head>
 
-<body> 
+<body>  
+
+      <div id="notforpc" class="position-sticky top-0 start-0" style="padding-top:40px; background-color:white; padding-bottom:10px; z-index:10; margin-bottom:-120px; margin-top:15px; width:100%; justify-content:space-around;">
+           <h1 style="font-weight:bold">Victor Emmy</h1>
+          
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navabar-toggler-icon">
+            <svg class="text-primary menu" width="32" height="32">
+              <use xlink:href="#menu"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
 
   <!--svg icons-->  
   <svg class="ansvg"> 
@@ -83,7 +105,7 @@
       <div class="container-fluid">
         <div class="d-flex align-items-center g-4">
           <a class="navbar-brand d-flex" href="/">
-           <h1 style="font-weight:bold">Victor Emmy</h1>
+           <h1 class="ansvgb" style="font-weight:bold">Victor Emmy</h1>
           </a>
           <div class="icon px-5">
             
@@ -119,7 +141,7 @@
             </a>    
           </div>
         </div>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+        <button class="ansvgb navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navabar-toggler-icon">
             <svg class="text-primary menu" width="32" height="32">
