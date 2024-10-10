@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Victor Emmy</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!--cdncss link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/lightbox.min.css">
+
+  <!--style sheet-->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <!--svg icons-->
+  <svg>
+    
+    <symbol id="snapchat" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M21.951 15.614a4.724 4.724 0 0 1-2.981-2.173a1 1 0 1 0-1.657 1.121a7.688 7.688 0 0 0 2.403 2.335c-.135.025-.281.05-.442.075a1.367 1.367 0 0 0-1.076 1.207a6.062 6.062 0 0 0-2.014-.004a4.64 4.64 0 0 0-1.958.956a3.484 3.484 0 0 1-2.104.87h-.26a3.485 3.485 0 0 1-2.106-.872a4.627 4.627 0 0 0-1.929-.95a6.39 6.39 0 0 0-2.04.005a1.368 1.368 0 0 0-1.062-1.21a12.74 12.74 0 0 1-.435-.075A6.857 6.857 0 0 0 6.085 15.4a6.714 6.714 0 0 0 .635-.868a1 1 0 0 0-1.696-1.06a4.907 4.907 0 0 1-.448.616a4.252 4.252 0 0 1-2.553 1.528a1.224 1.224 0 0 0-1.032 1.236a1.28 1.28 0 0 0 .115.533c.316.716 1.156 1.168 2.785 1.474l.03.13c.03.118.058.239.093.348a1.289 1.289 0 0 0 1.278.945a2.59 2.59 0 0 0 .603-.087a4.67 4.67 0 0 1 1.588-.046a3.008 3.008 0 0 1 1.123.618a5.413 5.413 0 0 0 3.255 1.235h.261a5.445 5.445 0 0 0 3.274-1.248a2.915 2.915 0 0 1 1.131-.61a3.485 3.485 0 0 1 .624-.052a4.27 4.27 0 0 1 .955.106a3.788 3.788 0 0 0 .616.064a1.256 1.256 0 0 0 1.245-.923c.038-.122.067-.24.094-.355l.032-.124c1.624-.305 2.467-.754 2.767-1.44a1.17 1.17 0 0 0 .127-.48a1.244 1.244 0 0 0-1.036-1.326m-18.15-4.466a1.005 1.005 0 0 0 1.057-.484a3.138 3.138 0 0 0 1.275.338a1.794 1.794 0 0 0 1.265-.499a1 1 0 0 0 .317-.79l-.036-.602a9.902 9.902 0 0 1 .156-3.561a4.26 4.26 0 0 1 3.966-2.544l.388-.004a4.264 4.264 0 0 1 3.96 2.547a9.917 9.917 0 0 1 .156 3.564l-.01.163l-.027.444a1.028 1.028 0 0 0 .312.778a1.795 1.795 0 0 0 1.254.503a3.271 3.271 0 0 0 1.241-.365a1 1 0 0 0 .916.598h.018a1 1 0 0 0 .982-1.017a1.642 1.642 0 0 0-1.185-1.451a1.914 1.914 0 0 0-1.477.01a9.471 9.471 0 0 0-.354-4.042a6.236 6.236 0 0 0-5.796-3.732l-.393.004a6.222 6.222 0 0 0-5.777 3.73a9.586 9.586 0 0 0-.352 4.094l-.111-.052a1.909 1.909 0 0 0-2.537 1.199a1.002 1.002 0 0 0 .793 1.171" />
+    </symbol>
+    <symbol id="telegram" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M22.265 2.428a2.048 2.048 0 0 0-2.078-.324L2.266 9.339a2.043 2.043 0 0 0 .104 3.818l3.625 1.261l2.02 6.682a.998.998 0 0 0 .119.252c.008.012.019.02.027.033a.988.988 0 0 0 .211.215a.972.972 0 0 0 .07.05a.986.986 0 0 0 .31.136l.013.001l.006.003a1.022 1.022 0 0 0 .203.02l.018-.003a.993.993 0 0 0 .301-.052c.023-.008.042-.02.064-.03a.993.993 0 0 0 .205-.114a250.76 250.76 0 0 1 .152-.129l2.702-2.983l4.03 3.122a2.023 2.023 0 0 0 1.241.427a2.054 2.054 0 0 0 2.008-1.633l3.263-16.017a2.03 2.03 0 0 0-.693-1.97M9.37 14.736a.994.994 0 0 0-.272.506l-.31 1.504l-.784-2.593l4.065-2.117Zm8.302 5.304l-4.763-3.69a1.001 1.001 0 0 0-1.353.12l-.866.955l.306-1.487l7.083-7.083a1 1 0 0 0-1.169-1.593L6.745 12.554L3.02 11.191L20.999 4Z" />
+    </symbol> 
+    <symbol id="twitter" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M22.991 3.95a1 1 0 0 0-1.51-.86a7.48 7.48 0 0 1-1.874.794a5.152 5.152 0 0 0-3.374-1.242a5.232 5.232 0 0 0-5.223 5.063a11.032 11.032 0 0 1-6.814-3.924a1.012 1.012 0 0 0-.857-.365a.999.999 0 0 0-.785.5a5.276 5.276 0 0 0-.242 4.769l-.002.001a1.041 1.041 0 0 0-.496.89a3.042 3.042 0 0 0 .027.439a5.185 5.185 0 0 0 1.568 3.312a.998.998 0 0 0-.066.77a5.204 5.204 0 0 0 2.362 2.922a7.465 7.465 0 0 1-3.59.448A1 1 0 0 0 1.45 19.3a12.942 12.942 0 0 0 7.01 2.061a12.788 12.788 0 0 0 12.465-9.363a12.822 12.822 0 0 0 .535-3.646l-.001-.2a5.77 5.77 0 0 0 1.532-4.202m-3.306 3.212a.995.995 0 0 0-.234.702c.01.165.009.331.009.488a10.824 10.824 0 0 1-.454 3.08a10.685 10.685 0 0 1-10.546 7.93a10.938 10.938 0 0 1-2.55-.301a9.48 9.48 0 0 0 2.942-1.564a1 1 0 0 0-.602-1.786a3.208 3.208 0 0 1-2.214-.935q.224-.042.445-.105a1 1 0 0 0-.08-1.943a3.198 3.198 0 0 1-2.25-1.726a5.3 5.3 0 0 0 .545.046a1.02 1.02 0 0 0 .984-.696a1 1 0 0 0-.4-1.137a3.196 3.196 0 0 1-1.425-2.673c0-.066.002-.133.006-.198a13.014 13.014 0 0 0 8.21 3.48a1.02 1.02 0 0 0 .817-.36a1 1 0 0 0 .206-.867a3.157 3.157 0 0 1-.087-.729a3.23 3.23 0 0 1 3.226-3.226a3.184 3.184 0 0 1 2.345 1.02a.993.993 0 0 0 .921.298a9.27 9.27 0 0 0 1.212-.322a6.681 6.681 0 0 1-1.026 1.524" />
+    </symbol>
+    <symbol id="whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M16.6 14c-.2-.1-1.5-.7-1.7-.8c-.2-.1-.4-.1-.6.1c-.2.2-.6.8-.8 1c-.1.2-.3.2-.5.1c-.7-.3-1.4-.7-2-1.2c-.5-.5-1-1.1-1.4-1.7c-.1-.2 0-.4.1-.5c.1-.1.2-.3.4-.4c.1-.1.2-.3.2-.4c.1-.1.1-.3 0-.4c-.1-.1-.6-1.3-.8-1.8c-.1-.7-.3-.7-.5-.7h-.5c-.2 0-.5.2-.6.3c-.6.6-.9 1.3-.9 2.1c.1.9.4 1.8 1 2.6c1.1 1.6 2.5 2.9 4.2 3.7c.5.2.9.4 1.4.5c.5.2 1 .2 1.6.1c.7-.1 1.3-.6 1.7-1.2c.2-.4.2-.8.1-1.2zm2.5-9.1C15.2 1 8.9 1 5 4.9c-3.2 3.2-3.8 8.1-1.6 12L2 22l5.3-1.4c1.5.8 3.1 1.2 4.7 1.2c5.5 0 9.9-4.4 9.9-9.9c.1-2.6-1-5.1-2.8-7m-2.7 14c-1.3.8-2.8 1.3-4.4 1.3c-1.5 0-2.9-.4-4.2-1.1l-.3-.2l-3.1.8l.8-3l-.2-.3c-2.4-4-1.2-9 2.7-11.5S16.6 3.7 19 7.5c2.4 3.9 1.3 9-2.6 11.4" />
+    </symbol> 
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M15.12 5.32H17V2.14A26.11 26.11 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73" />
+    </symbol>
+    <symbol id="messenger" viewBox="0 0 24 24">
+      <path fill="currentColor"  
+        d="M11.991 1a10.614 10.614 0 0 0-11 10.7a10.461 10.461 0 0 0 3.414 7.866l.052 1.69A1.8 1.8 0 0 0 6.256 23a1.82 1.82 0 0 0 .726-.152L8.903 22a11.895 11.895 0 0 0 3.088.4a10.615 10.615 0 0 0 11.001-10.7a10.615 10.615 0 0 0-11-10.7m0 19.4a9.862 9.862 0 0 1-2.635-.35a1.799 1.799 0 0 0-1.196.092l-1.714.756l-.045-1.493A1.81 1.81 0 0 0 5.8 18.13a8.488 8.488 0 0 1-2.81-6.43a8.66 8.66 0 0 1 9-8.7a8.705 8.705 0 1 1 0 17.4m3.735-11.815l-2.313 2.755l-3.347-2.056a.998.998 0 0 0-1.289.21l-3.05 3.636a1 1 0 1 0 1.53 1.285l2.499-2.975l3.347 2.056a.998.998 0 0 0 1.289-.21l2.866-3.415a1 1 0 1 0-1.531-1.286" />
+    </symbol>  
+    <symbol id="menu" viewBox="0 0 24 24">
+      <path fill="black"
+        d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m7-7a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z" />
+    </symbol>
+  </svg>
+
+  <header id="top" class="position-sticky top-0 start-0" style="z-index:10;">
+    <nav class="navbar bg-white fixed-top">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center g-4">
+          <a class="navbar-brand d-flex" href="/">
+           <h1 style="font-weight:bold">Victor Emmy</h1>
+          </a>
+          <div class="icon px-5">
+            
+            <a href="#" class="text-decoration-none">
+              <svg class="snapchat" width="24" height="24">
+                <use xlink:href="#snapchat"></use>
+              </svg>
+            </a> 
+            <a href="#" class="text-decoration-none">
+              <svg class="telegram" width="24" height="24">
+                <use xlink:href="#telegram"></use>
+              </svg>
+            </a> 
+            <a href="#" class="text-decoration-none">
+              <svg class="twitter" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <svg class="whatsapp" width="24" height="24">
+                <use xlink:href="#whatsapp"></use>
+              </svg>
+            </a> 
+            <a href="#" class="text-decoration-none">
+              <svg class="facebook" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <svg class="messenger" width="24" height="24">
+                <use xlink:href="#messenger"></use>
+              </svg>
+            </a>    
+          </div>
+        </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navabar-toggler-icon">
+            <svg class="text-primary menu" width="32" height="32">
+              <use xlink:href="#menu"></use>
+            </svg>
+          </span>
+        </button>
+        <div class="offcanvas offcanvas-end text-white bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white ms-3" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 p-4">
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase ls-4 text-white" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="/">Portfolio 
+                </a>
+              </li>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="/contact">Contact 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">Hire
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="index.html">About 
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="banner rounded-4 p-5"
+        style="background: linear-gradient(rgba(255, 166, 0, 0.45), rgba(0,0,0,0.80)), url(images/bgpfla.jpeg); background-size: cover ; background-repeat: no-repeat; background-position: center;">
+        <div class="text-content text-white py-5 my-5">
+          <p class="fs-4">
+            FULL STACK DEVELOPER
+          </p>
+          <h1 class="display-1">
+            Victor <br> Emmy
+          </h1>
+        </div> 
+
+        <div class="text-uppercase bg-black rounded-4" style="overflow-x:scroll; text-align:center; padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px; min-width:100px; margin-left:15px; margin-right:15px; display:grid; grid-row-gap:20px; justify-content:center; grid-column-gap:20px; grid-template-columns:repeat(auto-fit, minmax(125px, 3fr));">
+           
+            <div style="display:flex; width:100%; justify-content:center;">
+              <h2 style="text-align:center; font-size:40px; color:white">
+                5
+              </h2>
+              <p style="text-align:center; margin-top:10px; margin-left:3px; color:white">  
+                Years of <br> experience
+              </p>
+            </div> 
+
+            <div style="display:flex; width:100%; justify-content:center;">
+              <h2 style="text-align:center; font-size:40px; color:white">
+               28
+              </h2>
+              <p style="text-align:center; margin-top:10px; margin-left:3px; color:white">  
+                    satisfied <br> clients
+              </p>
+            </div> 
+           
+            <div style="display:flex; width:100%; justify-content:center;">
+              <h2 style="text-align:center; font-size:40px; color:white">
+                220 
+              </h2>
+              <p style="text-align:center; margin-top:10px; margin-left:3px; color:white">
+                projects <br> completed
+              </p>
+            </div> 
+        </div> 
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="p-5 ">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            <div class="icon">
+              <svg class="text-primary monitor" width="50" height="50">
+                <use xlink:href="#monitor"></use>
+              </svg>
+            </div>
+            <div class="text-md-start">
+              <h5>
+                Frontend Development
+              </h5>
+              <p class="postf">
+                Crafting seamless user interfaces with responsive designs and interactive elements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            <div class="icon">
+              <svg class="text-primary notes" width="50" height="50">
+                <use xlink:href="#notes"></use>
+              </svg>
+            </div>
+            <div class="text-md-start">
+              <h5>
+                Backend Development
+              </h5>
+              <p class="postf">
+                Building robust server-side logic, APIs, and database management systems.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="d-flex gap-4 align-items-start">
+            <div class="icon">
+              <svg class="text-primary laptop" width="50" height="50">
+                <use xlink:href="#laptop"></use>
+              </svg>
+            </div>
+            <div class="text-md-start">
+              <h5>
+                Penetration Testing
+              </h5>
+              <p class="postf">
+                Assessing network security to uncover vulnerabilities and strengthen defenses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="h-100 bg-yellow p-4 rounded-4">
+            <h3>
+              Education
+            </h3>
+            <div class="py-4">  
+              <p class="text-dark-emphasis">
+                2015 - 2020
+              </p>
+              <h5>
+                Best programmer award
+              </h5>
+              <p class="text-dark-emphasis">
+              King's park college  
+              </p>
+            </div>
+            <p class="text-dark-emphasis">
+              2021 - 2024
+            </p>
+            <h5>
+              Bachelors in Computer Science and Technology 
+            </h5>
+            <p class="text-dark-emphasis">
+             Heim Weldios university
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="h-100 bg-green p-4 rounded-4">
+            <h3>
+              Experiences
+            </h3>
+            <div class="py-4">
+              <p class="text-dark-emphasis">
+                2023 - 2024
+              </p>
+              <h5>
+                Onosco Psychotherapy Services.: Web Developer
+              </h5>
+              <p class="text-dark-emphasis">
+                Developed an amazing website where clients from europe can book psychotherapy services online.
+              </p>
+            </div>
+            <p class="text-dark-emphasis">
+              2024 - present
+            </p>
+            <h5>
+              Unique Fashion.: Web Developer
+            </h5>
+            <p class="text-dark-emphasis">
+              Developed a market place where people across the UK can order for available products and get them delivered to their respective destinations.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="h-100 bg-teal p-4 rounded-4">
+            <h3>
+              Interests
+            </h3>
+            <div class="py-4"> 
+              <h5>
+                Full Stack Development
+              </h5>
+              <p class="text-dark-emphasis">
+                Passionate about creating dynamic, scalable web applications with a focus on both frontend and backend technologies.
+              </p>
+            </div> 
+            <h5>
+              Cybersecurity & Penetration Testing
+            </h5>
+            <p class="text-dark-emphasis">
+              Interested in exploring vulnerabilities and improving security protocols for robust systems.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="rounded-4 p-5"
+        style="background-image: url(images/bgpflb.jpeg); background-size: cover ; background-repeat: no-repeat; background-position: center;">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="h-100 bg-black text-white p-4 rounded-4">
+              <h3>
+                References
+              </h3>
+              <div class="py-4"> 
+                <h5>
+                  Mr. ALex Aroh
+                </h5>
+                <p class="text-light-emphasis">
+                  Onosco Psychotherapy Services
+                </p>
+              </div> 
+              <h5>
+                Mr. Haybee
+              </h5>
+              <p class="text-light-emphasis">
+                Unique Fashion
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio py-5">
+    <div class="container">
+      <div class="justify-content-center">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="section-header text-center">
+              <h4 class="fw-bold fs-2 txt-fx slide-up">
+                A Glimpse Into My Past Projects.
+              </h4>
+            </div><!--section-header-->
+          </div> 
+        </div>  <br><br>
+
+        <div style="min-width:100px; margin-left:20px; margin-right:20px; display:grid; grid-row-gap:20px; justify-content:center; grid-column-gap:20px; grid-template-columns:repeat(auto-fit, minmax(125px, 3fr));" data-aos="fade-up">
+           <div style="width:100%;" class="portfolio-item graphicdesign"> <img src="images/proofa.PNG"
+                class="img-fluid rounded-4" alt="portfolio"> 
+          </div>
+          <div style="width:100%;" class="portfolio-item photography illustrations"> <img src="images/login.PNG"
+                class="img-fluid rounded-4" alt="portfolio"> 
+          </div>  
+          <div style="width:100%;" class="portfolio-item photography illustrations"> 
+            <img src="images/signup.PNG"
+                class="img-fluid rounded-4" alt="portfolio"> 
+          </div> 
+          <div style="width:100%;" class="portfolio-item photography illustrations"> 
+            <img src="images/onoscoproof.PNG"
+                class="img-fluid rounded-4" alt="portfolio"> 
+          </div>  
+
+        </div>
+ 
+
+      </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <h2 class="display-3 mb-5">
+          Testimonies
+        </h2>
+      </div>
+
+      <div class="swiper testimonial-swiper">
+        <div class="swiper-wrapper ">
+          <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                “Victor has been an invaluable asset to our team. His expertise in full-stack development and attention to detail are remarkable. He consistently delivers high-quality work and goes above and beyond to ensure our projects run smoothly.”
+              </p>
+              <h5>
+                Mr. Haybee
+              </h5>
+              <p style="color:orange" class="postd">
+                10/08/2024
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                “Working with Victor was a game-changer for our business. His ability to understand complex requirements and translate them into efficient, scalable solutions is impressive. He is a true professional with an excellent work ethic.”
+              </p>
+              <h5>
+               Mr. Alex Aroh
+              </h5>
+              <p style="color:orange" class="postd">
+                08/05/2024
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-card  rounded-3 py-4 px-4 swiper-slide">
+            <div class="text-start">
+              <p>
+                “Victor's technical knowledge, especially in backend development and cybersecurity, is outstanding. His dedication to continuous learning and staying updated with the latest industry trends truly sets him apart. We couldn’t be happier with the results he’s delivered.”
+              </p>
+              <h5>
+                Dr. Rowland
+              </h5>
+              <p style="color:orange" class="postd">
+                12/2/2023
+              </p>
+            </div>
+          </div> 
+        </div>
+        <div class="testimonial-swiper-pagination position-relative mt-5 text-center"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>  <br>
+    <div class="container">
+      <div class="text-center pt-5">
+        <h2 class="display-3">
+          FAQs
+        </h2>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <img src="images/bgpfl.jpeg" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion accordion-flush" id="accordion-flush">
+            <div class="accordion-item border mb-3 rounded-3">
+              <h5 class="accordion-header">
+                <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Can I use credit cards or USD for payment?
+                </button>
+              </h5>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-flush"" >
+                                <div class=" accordion-body">
+                <p>Yes, you can use credit cards for payment.
+                  We also accept payments in USD, so feel free to use your preferred currency and payment method when making a purchase.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                What times are you available for calls?
+              </button>
+            </h5>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>I am available for calls during the following times:
+
+                  Monday to Friday: 9 AM to 5 PM (Your Time Zone)
+                  Saturday: 10 AM to 2 PM (Your Time Zone)
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                How do I hire you for few months?
+              </button>
+            </h5>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>To hire me for a few months, follow these steps:
+
+                  Contact Me: Reach out via email or the contact form on my website to discuss your project needs and duration.
+                  
+                  Project Scope: We’ll define the scope of work, objectives, and timeline to ensure clarity on deliverables.
+                  
+                  Agreement: After finalizing the details, we will draft a contract outlining the terms of service, payment structure, and project milestones.
+                  
+                  Payment: A deposit may be required upfront, depending on the agreement. Payment methods can include credit cards or USD.
+                  
+                  Kick-off: Once everything is in place, we can kick off the project and start collaborating!
+                  
+                  Feel free to reach out with any questions or to initiate the hiring process!</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border mb-3 rounded-3">
+            <h5 class="accordion-header">
+              <button class="accordion-button collapsed" style="font-weight:bold;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                Will I get the source files of my order?
+              </button>
+            </h5>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion-flush">
+              <div class="accordion-body">
+                <p>Yes, you will receive the source files for your order.
+                  Upon completion of the project, I will provide you with all relevant source files, including any necessary documentation. This ensures you have full access to your project materials and can make any future modifications as needed.</p>
+              </div>
+            </div>
+          </div> 
+            
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--<section class="py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="display-3">
+          Latest News
+        </h2>
+        <p>
+          Accusan maiores alias conseaut equatur aut perferendi.
+        </p>
+      </div>
+      <div class="row py-4">
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/post-thumb-1.jpg" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                  Design / Sept 12, 2022
+                </p>
+                <h3>
+                  Graphic Designing Useful Tips & Best Practices
+                </h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/post-thumb-2.jpg" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                  Design / Sept 12, 2022
+                </p>
+                <h3>
+                  Best way to do branding of digital products 
+                </h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/post-thumb-3.jpg" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                  Design / Sept 12, 2022
+                </p>
+                <h3>
+                  Top 10 graphic designs review in 2022
+                </h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3">
+          <div class="post-item p-3 border rounded-5">
+            <div class="row g-md-5">
+              <div class="col-lg-5">
+                <img src="images/post-thumb-4.jpg" class="img-fluid rounded-4">
+              </div>
+              <div class="col-lg-7">
+                <p class="text-uppercase text-muted mt-3">
+                  Design / Sept 12, 2022
+                </p>
+                <h3>
+                  Graphic Designing Useful Tips & Best Practices
+                </h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn btn-outline-dark btn-lg mt-3 btn-color text-uppercase">
+          View All Blogs
+        </button>
+      </div>
+    </div>
+  </section>--->
+
+  <section class="p-5 bg-yellow py-5">
+    <div class="container">
+      <div class="row justify-content-center my-5">
+        <div class="col-md-5">
+          <h6>
+            Quick Contact
+          </h6>
+          <h2 class="display-3">
+            Leave a Message
+          </h2>
+          <p>
+            If you have any questions or need assistance, feel free to leave a message below. I’ll get back to you as soon as possible!
+          </p>
+        </div>
+        <div class="col-md-5">
+          <div class="mb-3">
+            <input type="name" class="form-control p-3 rounded-4" name="name" id="name" aria-describedby="nameHelpId"
+              placeholder="your name" />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control p-3 rounded-4" name="email" id="email" aria-describedby="emailHelpId"
+              placeholder="your email" />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control p-3 rounded-4" name="your message" placeholder="your message" id="message" rows="3"></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="button" class="btn btn-dark btn-lg text-uppercase rounded-4">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="bg-black text-white py-5">
+    <div class="container-sm">
+      <div class="row g-md-5 my-5">
+        <div class="col-md-4">
+          <div class="info-box">
+           <h1 style='font-weight:bold'>Victor Emmy</h1>
+            <p class="py-4">
+              Sign up for our newsletter and stay in the loop with our latest projects, industry trends, and helpful insights delivered right to you!  </p>
+            <div class="social-links"> 
+              <svg class="snapchat" width="24" height="24">
+                <use xlink:href="#snapchat"></use>
+              </svg>
+              <svg class="telegram" width="24" height="24">
+                <use xlink:href="#telegram"></use>
+              </svg> 
+              <svg class="twitter" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg>
+              <svg class="whatsapp" width="24" height="24">
+                <use xlink:href="#whatsapp"></use>
+              </svg> 
+              <svg class="facebook" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg>
+              <svg class="messenger" width="24" height="24">
+                <use xlink:href="#messenger"></use>
+              </svg> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-decoration-none text-white" href="/">Home</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-white" href="/about">About</a>
+                </li> 
+                <li>
+                  <a class="text-decoration-none text-white" href="#">Portfolio</a>
+                </li> 
+                <li>
+                  <a class="text-decoration-none text-white" href="/contact">Contact</a>
+                </li>
+              </ul>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-5">
+          <p>
+            Just feel free to contact if you wanna collaborate with me, or simply have a conversation.
+          </p>
+          <h3>
+            <a href="mailto:victoremmy1876@gmail.com" class="text-white text-decoration-none">victoremmy1876@gmail.com</a>
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <p>©2024 Victor Emmy. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <!--cdn link-->
+  <script src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
