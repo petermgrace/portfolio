@@ -45,14 +45,52 @@
 
       .textstart{
          width:100%;
-      }
+      }  
+    
 
+
+     .bgff{
+      background-image:none; 
+      background-color:#411212;
+     }   
+
+
+     .bgffc{
+      overflow-x:scroll; 
+      text-align:center;
+       padding-top:20px;
+       padding-bottom:20px; 
+       padding-left:20px; 
+       padding-right:20px; 
+       min-width:100px;
+        margin-left:15px;
+        margin-right:15px;
+         display:grid;
+         grid-row-gap:20px;
+         justify-content:center;
+       grid-column-gap:20px; 
+       grid-template-columns:repeat(auto-fit, minmax(125px, 3fr)); 
+       background-color:white;
+     }    
+
+     .bgffc h1, .bgffc p{ 
+      color:black; 
+      font-weight:bold;
+     }
+      
 
 
       @media only screen and (max-width:678px) {
           .ansvg{
              display:none
-          } 
+          }   
+
+          .bgffb{
+        padding-left:10px;
+        padding-right:10px;
+      }    
+      
+  
           .ansvgb{
              display:none
           } 
@@ -210,9 +248,8 @@
 
   <section>
     <div class="container">
-      <div class="bgff banner rounded-4 p-5"
-        style="background: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.80)), url(images/bgpflb.jpeg); background-size: cover ; background-repeat: no-repeat; background-position: center;">
-        <div class="text-content text-white py-5 my-5">
+      <div class="bgff banner rounded-4 p-5">
+       <div class="text-content text-white py-5 my-5">
           <p class="fs-4">
             FULL STACK DEVELOPER
           </p>
@@ -221,42 +258,42 @@
           </h1> 
         </div> 
 
-        <div class="text-uppercase bg-black rounded-4" style="overflow-x:scroll; text-align:center; padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px; min-width:100px; margin-left:15px; margin-right:15px; display:grid; grid-row-gap:20px; justify-content:center; grid-column-gap:20px; grid-template-columns:repeat(auto-fit, minmax(125px, 3fr));">
+        <div class="text-uppercase rounded-4 bgffc">
            
             <div style="display:flex; width:100%; justify-content:center;">
-              <h2 style="text-align:center; font-size:40px; color:white">
+              <h2 style="text-align:center; font-size:40px;">
                 5
               </h2>
-              <p style="text-align:center; margin-top:10px; margin-left:3px; color:white">  
+              <p style="text-align:center; margin-top:10px; margin-left:3px;">  
                 Years of <br> experience
               </p>
             </div> 
 
             <div style="display:flex; width:100%; justify-content:center;">
-              <h2 style="text-align:center; font-size:40px; color:white">
+              <h2 style="text-align:center; font-size:40px;">
                28
               </h2>
-              <p style="text-align:center; margin-top:10px; margin-left:3px; color:white">  
+              <p style="text-align:center; margin-top:10px; margin-left:5px;">  
                     satisfied <br> clients
               </p>
             </div> 
            
             <div style="display:flex; width:100%; justify-content:center;">
-              <h2 style="text-align:center; font-size:40px; color:white">
+              <h2 style="text-align:center; font-size:40px;">
                 220 
               </h2>
-              <p style="text-align:center; margin-top:10px; margin-left:3px; color:white">
+              <p style="text-align:center; margin-top:10px; margin-left:3px;">
                 projects <br> completed
               </p>
             </div> 
-        </div> 
+        </div>
 
 
       </div>
     </div>
   </section>
 
-       <div id="about" class="starring"> 
+       <div id="about" class="bgffb starring"> 
             <div class="textstart">
               <h5>
                 Frontend Development
